@@ -1,0 +1,23 @@
+@import '../../scss/variables';
+
+.navbar {
+  margin-bottom: 40px;
+  top: 30px;
+  padding: 20px 30px;
+  border: 1px solid $color-DoveGray;
+
+  &__item {
+    margin-right: 30px;
+    color: $color-DoveGray;
+    font-size: 22px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &.active {
+      opacity: 1;
+      color: #000;
+    }
+  }
+}

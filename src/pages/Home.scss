@@ -1,0 +1,29 @@
+@import '../scss/variables';
+
+.link {
+  color: $color-DoveGray;
+  font-size: 22px;
+
+  &.active {
+    opacity: 1;
+    color: #000;
+  }
+}
+
+.main-img {
+  @include set(453, 252);
+
+  position: relative;
+  margin-bottom: 30px;
+  background: transparent linear-gradient(180deg, #D29EF8 0%, #00CED6 100%) 0% 0% no-repeat padding-box;
+
+  &__title {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+  }
+
+  &__pic {
+    z-index: 5;
+  }
+}

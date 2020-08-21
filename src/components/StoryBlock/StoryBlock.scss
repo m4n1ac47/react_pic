@@ -1,0 +1,37 @@
+@import '../../scss/variables';
+
+.story {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &__img {
+    @include set(168, 88);
+
+    position: relative;
+    margin-right: 30px;
+    width: 168px;
+    background: transparent linear-gradient(180deg, #D29EF8 0%, #00CED6 100%) 0% 0% no-repeat padding-box;
+  }
+
+  &__title {
+    font-size: 22px;
+    color: $color-DoveGray;
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    font-size: 22px;
+  }
+}
+
+
+.remove-button {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}

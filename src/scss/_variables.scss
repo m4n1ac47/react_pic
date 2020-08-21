@@ -1,0 +1,11 @@
+$color-DoveGray :#707070;
+$color-blue: #006896;
+
+@mixin set($a: 1, $b: 1, $display: block, $content: "") {
+  &::before {
+    display: $display;
+    padding-bottom: ($b / $a) * 100%;
+    content: $content;
+    @content;
+  }
+}
