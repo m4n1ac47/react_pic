@@ -21,7 +21,7 @@ export const StoryBlock = ({ item }) => {
   const removeItem = id => {
     dispatch(removeStory(id))
 
-    if (paginatedRecords.size - 1 === 0) dispatch(setPage(currentPage - 1))
+    if (paginatedRecords.size - 1 === 0 && currentPage !== 1) dispatch(setPage(currentPage - 1))
   }
 
   return (
